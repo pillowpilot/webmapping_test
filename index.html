@@ -30,7 +30,7 @@
         <script src="js/rbush.min.js"></script>
         <script src="js/labelgun.min.js"></script>
         <script src="js/labels.js"></script>
-        <script src="data/pry_admbnda_adm1_DGEEC_2020_1.js"></script>
+        <script src="data/Simplified_1.js"></script>
         <script>
         var highlightLayer;
         function highlightFeature(e) {
@@ -49,7 +49,7 @@
         }
         var map = L.map('map', {
             zoomControl:true, maxZoom:10, minZoom:7
-        }).fitBounds([[-28.107107996110543,-65.459295602186],[-19.217217178274584,-52.4037263275185]]);
+        }).fitBounds([[-27.790298628217016,-63.9986759881148],[-18.878215373343302,-50.94310671344729]]);
         var hash = new L.Hash(map);
         map.attributionControl.setPrefix('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a> &middot; <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> &middot; <a href="https://qgis.org">QGIS</a>');
         var autolinker = new Autolinker({truncate: {length: 30, location: 'smart'}});
@@ -69,7 +69,7 @@
         });
         layer_OSMStandard_0;
         map.addLayer(layer_OSMStandard_0);
-        function pop_pry_admbnda_adm1_DGEEC_2020_1(feature, layer) {
+        function pop_Simplified_1(feature, layer) {
             layer.on({
                 mouseout: function(e) {
                     for (i in e.target._eventParents) {
@@ -95,35 +95,35 @@
             layer.bindPopup(popupContent, {maxHeight: 400});
         }
 
-        function style_pry_admbnda_adm1_DGEEC_2020_1_0() {
+        function style_Simplified_1_0() {
             return {
-                pane: 'pane_pry_admbnda_adm1_DGEEC_2020_1',
+                pane: 'pane_Simplified_1',
                 opacity: 1,
-                color: 'rgba(35,35,35,1.0)',
+                color: 'rgba(38,89,128,1.0)',
                 dashArray: '',
                 lineCap: 'butt',
                 lineJoin: 'miter',
-                weight: 1.0, 
+                weight: 2.0, 
                 fill: true,
                 fillOpacity: 1,
-                fillColor: 'rgba(141,90,153,1.0)',
+                fillColor: 'rgba(55,126,184,1.0)',
                 interactive: true,
             }
         }
-        map.createPane('pane_pry_admbnda_adm1_DGEEC_2020_1');
-        map.getPane('pane_pry_admbnda_adm1_DGEEC_2020_1').style.zIndex = 401;
-        map.getPane('pane_pry_admbnda_adm1_DGEEC_2020_1').style['mix-blend-mode'] = 'normal';
-        var layer_pry_admbnda_adm1_DGEEC_2020_1 = new L.geoJson(json_pry_admbnda_adm1_DGEEC_2020_1, {
-            attribution: '<a href="https://data.humdata.org/dataset/paraguay-administrative-level-0-boundaries">OCHA ROLAC</a>',
+        map.createPane('pane_Simplified_1');
+        map.getPane('pane_Simplified_1').style.zIndex = 401;
+        map.getPane('pane_Simplified_1').style['mix-blend-mode'] = 'normal';
+        var layer_Simplified_1 = new L.geoJson(json_Simplified_1, {
+            attribution: '',
             interactive: true,
-            dataVar: 'json_pry_admbnda_adm1_DGEEC_2020_1',
-            layerName: 'layer_pry_admbnda_adm1_DGEEC_2020_1',
-            pane: 'pane_pry_admbnda_adm1_DGEEC_2020_1',
-            onEachFeature: pop_pry_admbnda_adm1_DGEEC_2020_1,
-            style: style_pry_admbnda_adm1_DGEEC_2020_1_0,
+            dataVar: 'json_Simplified_1',
+            layerName: 'layer_Simplified_1',
+            pane: 'pane_Simplified_1',
+            onEachFeature: pop_Simplified_1,
+            style: style_Simplified_1_0,
         });
-        bounds_group.addLayer(layer_pry_admbnda_adm1_DGEEC_2020_1);
-        map.addLayer(layer_pry_admbnda_adm1_DGEEC_2020_1);
+        bounds_group.addLayer(layer_Simplified_1);
+        map.addLayer(layer_Simplified_1);
         setBounds();
         </script>
     </body>
